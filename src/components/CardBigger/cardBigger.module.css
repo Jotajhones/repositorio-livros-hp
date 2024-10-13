@@ -1,0 +1,54 @@
+.cardBigger {
+    width: 90%; 
+    height: auto;
+    max-width: 800px;
+    margin: auto;
+    display: flex;
+    /* border: solid 1px var(--cor0); */
+    box-shadow: 0 0 5px 5px rgba(146, 146, 146, 0.2);
+    border-radius: 5px;   
+}
+
+.interface {
+    /* background-color: rgba(0, 0, 0, 0.445); */
+    width: 100%;
+    max-width: 300px;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    /* position: relative;
+    bottom: 40px; */
+}
+
+.cardBigger img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 5px 0 0 5px;
+}
+
+.conteudo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: inherit;
+    padding: 10px;
+}
+
+.textos {
+    padding: 10px;
+    color: var(--cor0);
+    font-family: Arial, Helvetica, sans-serif; 
+}
+
+.textos h1 {
+    font-size: 2em;
+}
+
+.textos p {
+    text-align: justify;
+    text-indent: 1cm;
+    color: black;
+}
+
+/*  */

@@ -1,0 +1,35 @@
+.comment {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    width: 90%;
+    max-width: 800px;
+    margin: auto;
+    margin-top: 40px;
+}
+
+.text {
+    height: 20px;
+    width: 80%;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid var(--cor_card);
+    text-indent: 0.2cm;
+    padding: 0;
+    font-size: 1em;
+    font-weight: 500;
+}
+
+.button {
+    height: 35px;
+    width: 20%;
+    background-color: var(--cor_card);
+    border: none;
+    border-radius: 5px 5px 5px 0;
+    color: white;
+    font-weight: 600;
+}
+
+.button:hover {
+    background-color: var(--cor_fundo);
+}

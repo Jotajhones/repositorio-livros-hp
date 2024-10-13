@@ -1,0 +1,17 @@
+h1 {
+     text-align: center;
+     font-family: var(--fonte_padrao);
+     margin-bottom: 15px;
+     font-size: 2.5em;
+}
+
+.section {
+     width: 95%;
+     max-width: 1200px;
+     margin: 0 auto;
+     display: flex;
+     flex-wrap: wrap;
+     gap: 15px;
+     display: flex;
+     justify-content: center ;
+}

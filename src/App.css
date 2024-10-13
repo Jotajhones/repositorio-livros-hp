@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=SUSE:wght@100..800&display=swap');
+
+:root {
+    --cor0: #023059;
+    --cor1: #34274C;
+    --cor2: #F2B705;
+    --cor3: #F29F05;
+    --cor4: #BF6B04;
+    --cor5: #732C02;
+    --cor_fundo: #A6A9BD;
+    --cor_card: #62678B;
+
+    --fonte_padrao: 'SUSE', Arial, Helvetica, sans-serif;
+}
