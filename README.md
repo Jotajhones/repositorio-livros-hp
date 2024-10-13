@@ -10,8 +10,8 @@ Projeto consumindo api publica de livros: https://potterapi-fedeperin.vercel.app
 - Sistema de notas/comentarios pessoais;
 
 Para rodar o projeto, basta abrir a pagina do projeto e executar:
-npm i
-npm start
+-npm i
+-npm start
 
 Possiveis proximas features:
 - Sistema de busca;
