@@ -1,18 +1,26 @@
 import styles from "./star.module.css";
 import { useState } from "react";
+import { EstrelasContext, useEstrelasContextContext } from "../../context/estrelas"
 
-function Star({ starCount }) {
+function Star({ starCount, id, darNota }) {
     const [nota, setNota] = useState();
     const [floatNota, setFloatNota] = useState(0);
+    const { estrelasContext, addestrelasContext } = useEstrelasContextContext();
+    const isStar = estrelasContext.some((est) => est.id === id);
 
+    function darNota(i) {
+        console.log(setNota(i + 1))
+        return setNota(i + 1)
+    }
+    
     const stars = Array.from({ length: starCount }, (_, i) => <Estrela
+
         key={i}
-        atribuirNota={() => setNota(i + 1)}
+        atribuirNota={() => { darNota(i); addestrelasContext({ id, i }) }}
         preencherEstrela={floatNota ? floatNota >= 1 + i : nota >= i + 1}
         floatNota={() => setFloatNota(i + 1)}
         resetFloatNota={() => setFloatNota(0)}
     />)
-   
 
     return (
         <div className={styles.star}>
@@ -21,10 +29,14 @@ function Star({ starCount }) {
     );
 }
 
-function Estrela({ atribuirNota, preencherEstrela, floatNota, resetFloatNota }) {
+
+
+function Estrela({ atribuirNota, preencherEstrela, floatNota, resetFloatNota, darNota }) {
+
+
     return (
         <>
-            <span onClick={atribuirNota} onMouseEnter={floatNota} onMouseLeave={resetFloatNota}>
+            <span onClick={atribuirNota} onMouseEnter={floatNota} onMouseLeave={resetFloatNota} >
                 <svg
                     xmlns="http://www.w3.org/2000/svg"
                     fill={preencherEstrela ? 'Orange' : 'White'}

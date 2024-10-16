@@ -9,7 +9,7 @@ function PageNotFound() {
             <Header />
             <section className={styles.section}>
                 <h1>Pagina não encontrada</h1>
-                <img src={logo} />
+                <img src={logo} alt="Imagem ilustrativa, erro de conexao erro 404"/>
             </section>
             <Footer />
         </>

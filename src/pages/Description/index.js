@@ -7,16 +7,13 @@ import { useParams } from "react-router-dom";
 import PageNotFound from "../PageNotFound";
 import capa from "../../json/capas.json";
 import { filterCapa } from "../../components/Card";
-import Comment from "../../components/Comment";
-
-
 
 function Description() {
 
     window.scrollTo(0, 0)
     const { data } = useBookData();
     const params = useParams();
-    const livro = data?.find((item) => { return item.number === params.id })
+    const livro = data?.find((item) => { return Number(item.number) === Number(params.id) })
     if (!livro) { return <PageNotFound /> }
 
     return (
@@ -25,7 +22,6 @@ function Description() {
             <section className={styles.description}>
                 <CardBigger id={livro.number} capa={filterCapa(capa, livro)} title={livro.title} description={livro.description} />
             </section>
-            <Comment />
             <Footer />
         </>
     );

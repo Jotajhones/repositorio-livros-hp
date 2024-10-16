@@ -4,21 +4,17 @@
     max-width: 800px;
     margin: auto;
     display: flex;
-    /* border: solid 1px var(--cor0); */
-    box-shadow: 0 0 5px 5px rgba(146, 146, 146, 0.2);
+    box-shadow: 0 0 1px 1px rgba(146, 146, 146, 0.1);
     border-radius: 5px;   
 }
 
 .interface {
-    /* background-color: rgba(0, 0, 0, 0.445); */
     width: 100%;
     max-width: 300px;
     height: fit-content;
     display: flex;
     align-items: center;
     justify-content: space-around;
-    /* position: relative;
-    bottom: 40px; */
 }
 
 .cardBigger img {
@@ -50,5 +46,3 @@
     text-indent: 1cm;
     color: black;
 }
-
-/*  */

@@ -14,7 +14,7 @@ export default function FavoritesProvider({ children }) {
         </FavoritesContext.Provider>
     );
 }
-// não esquecer de adicionar a const inicial acima como taga em routes.js envolvendo toda as rotas.
+// não esquecer de adicionar a const inicial acima como tag em routes.js envolvendo toda as rotas.
 
 // hook personalizado;
 

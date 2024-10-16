@@ -1,11 +1,6 @@
+
 .comment {
     width: 90%;
-    max-width: 800px;
-    margin: 40px auto;
-}
-
-.comment div {
-    width: 100%;
     max-width: 800px;
     margin: 10px auto;
     min-height: 40px;
@@ -15,8 +10,6 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.comment div:hover {
-    background-color: #c5c5c5c5;
-}
+
 
 

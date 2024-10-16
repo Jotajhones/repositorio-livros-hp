@@ -30,5 +30,4 @@
 .header nav a:hover {
     color: var(--cor2);
     border-bottom: 2px solid var(--cor2);
-
 }

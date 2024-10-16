@@ -1,10 +1,10 @@
 import styles from "./comment.module.css";
 
-function Comment() {
+function Comment({children}) {
     return (
         <>
-            <section className={styles.comment} id="caixa">
-               
+            <section className={styles.comment} >
+                <p>{children}</p>
             </section>
         </>
     );

@@ -3,8 +3,10 @@ import unHeart from "./icons/heart.png";
 import heart from "./icons/heart1.png";
 import chat from "./icons/comment.png";
 import { useFavoriteContext } from "../../context/favorites";
+import { useEstrelasContextContext } from "../../context/estrelas"
 import { Link } from "react-router-dom";
 import Star from "../Star";
+import { useState } from "react"
 
 export function Card({ id, title, imagem }) {
 
@@ -23,16 +25,16 @@ export function Card({ id, title, imagem }) {
                 <abbr title={title}>
                     <h2>{title}</h2>
                 </abbr>
-                <Star starCount={5}/>
+                <Star starCount={5} id={id} />
                 <div className={styles.divIcons}>
                     <div onClick={() => addFavorite({ id, title })}
                     >
-                        <img src={icone} />
+                        <img src={icone} alt="Icone Coração, favoritos" />
 
                     </div>
                     <div>
                         <Link to={`/description/${id}`}>
-                            <img src={chat} />
+                            <img src={chat} alt="Icone caixa de comentarios" />
                         </Link>
                     </div>
                 </div>
@@ -43,14 +45,13 @@ export function Card({ id, title, imagem }) {
 }
 
 export function filterCapa(capa, livro) {
-    const result = capa.filter(item => {
+    let result
+    capa.forEach((item, i) => {
         if (item.id === livro.number || item.id === livro.id) {
-            return (item.capa)
+
+            result = item.capa
+            return result
         }
-    })
-    return result[0].capa
+    });
+    return result
 }
-
-
-// https://potterapi-fedeperin.vercel.app/pt/books
-
