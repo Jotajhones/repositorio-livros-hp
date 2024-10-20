@@ -1,0 +1,37 @@
+.search {
+    width: 95%;
+    max-width: 1350px;
+    margin: 0 auto 40px auto;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.search div {
+    display: flex;
+    align-items: flex-end;
+}
+
+.search input {
+    height: 20px;
+    width: 80%;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid var(--cor_card);
+    padding: 0;
+    font-size: 1em;
+    font-weight: 500;
+}
+
+.search button {
+    height: 35px;
+    width: 100px;
+    background-color: var(--cor_card);
+    border: none;
+    border-radius: 5px 5px 5px 0;
+    color: white;
+    font-weight: 600;
+}
+
+.search button:hover {
+    background-color: var(--cor_fundo);
+}

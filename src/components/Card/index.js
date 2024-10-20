@@ -3,10 +3,10 @@ import unHeart from "./icons/heart.png";
 import heart from "./icons/heart1.png";
 import chat from "./icons/comment.png";
 import { useFavoriteContext } from "../../context/favorites";
-import { useEstrelasContextContext } from "../../context/estrelas"
+
 import { Link } from "react-router-dom";
 import Star from "../Star";
-import { useState } from "react"
+
 
 export function Card({ id, title, imagem }) {
 
@@ -46,11 +46,10 @@ export function Card({ id, title, imagem }) {
 
 export function filterCapa(capa, livro) {
     let result
-    capa.forEach((item, i) => {
+    capa.forEach((item) => {
         if (item.id === livro.number || item.id === livro.id) {
 
             result = item.capa
-            return result
         }
     });
     return result

@@ -1,6 +1,6 @@
 import styles from "./comment.module.css";
 
-function InputComment({ comentar, inputValue, setInputValue }) {
+function InputComment({ comentar, setInputValue }) {
     
     return (
         <>

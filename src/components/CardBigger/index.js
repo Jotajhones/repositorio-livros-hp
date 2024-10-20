@@ -21,8 +21,6 @@ function CardBigger({ id, capa, title, description, inputValue }) {
     const [userInput, setUserInput] = useState('');
     const [comentarios, setComentarios] = useState([]);
 
-    let count = 0
-
     function comentar(e) {
 
         e.preventDefault()
@@ -38,7 +36,6 @@ function CardBigger({ id, capa, title, description, inputValue }) {
         }
 
         addComentarios({ id, title, input })
-
     }
 
 
@@ -75,8 +72,7 @@ function CardBigger({ id, capa, title, description, inputValue }) {
             {isComents && (
 
                 comentariosContexto.map(item => { if (Number(item.id) === Number(id)) return <Comment children={item.input} key={`comments${id}.${item.input}`} /> })
-            )
-            }
+            )}
         </>
     );
 }
