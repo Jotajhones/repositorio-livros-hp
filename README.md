@@ -2,9 +2,9 @@ Projeto com fins de estudo utilizando react;
 
 Coinfira as telas na pasta Screenshot;
 
-Projeto consumindo api publica de livros:
--https://github.com/fedeperin/potterapi
--https://potterapi-fedeperin.vercel.app/pt/books;
+Projeto consumindo api publica de livros;
+- https://github.com/fedeperin/potterapi;
+- https://potterapi-fedeperin.vercel.app/pt/books;
 
 - Consumindo API para gerar conteudo dinamico;
 - Cards interativos;
