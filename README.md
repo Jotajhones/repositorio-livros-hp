@@ -11,7 +11,7 @@ Projeto consumindo api publica de livros;
 - Pagina de descrição para todos os livros disponiveis, criada dinamicamente;
 - Sistema de avaliação por estrelas;
 - Sistema de favoritos;
-- Sistema de notas/comentarios pessoais;
+- Sistema de notas/"comentarios" pessoais;
 - Sistema de busca;
 
 Para rodar o projeto, basta abrir a pagina do projeto e executar:
