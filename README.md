@@ -14,6 +14,6 @@ Projeto consumindo api publica de livros;
 - Sistema de notas/"comentarios" pessoais;
 - Sistema de busca;
 
-Para rodar o projeto, basta abrir a pagina do projeto e executar:
+Para rodar o projeto, basta abrir a pagina do projeto e executar:  
 -npm i  
 -npm start  
